@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.body-div {
+    font-family: 'Poppins', sans-serif;
+    transform: scale(0.9);
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+}
+
+.main-p {
+    margin-top: 0;
+    padding-top: 0;
+    color: grey;
+    font-size: 250%;
+    margin-bottom: 5px;
+}
+
+.main-h {
+    color: rgb(37, 37, 37);
+    font-size: 250%;
+    margin-top: 0;
+}
+
+.secondary-p {
+    color: grey;
+    font-size: 105%;
+    margin-bottom: 0px;
+}
+
+.secondary-p2 {
+    color: grey;
+    font-size: 105%;
+    margin-top: 5px;
+}
+
+.flexbox-container {
+    margin-top: 50px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.flexbox-items {
+    box-shadow: 3px 3px 15px rgba(202, 197, 197, 0.8), 
+    -3px -3px 15px rgba(202, 197, 197, 0.8);
+    border-radius: 5px;
+    height: 225px;
+    width: 303px;
+    text-align: left;
+}
+
+.item-1 {
+    margin-right: 20px;
+    border-top: hsl(180, 62%, 55%)5px solid;
+    position: relative;
+    top: 110px;
+}
+
+.item-4 {
+    margin-left: 20px;
+    border-top: hsl(212, 86%, 64%) 5px solid;
+    position: relative;
+    top: 110px;
+}
+
+.item-3 {
+    margin-top: 20px;
+    border-top: hsl(34, 97%, 64%) 5px solid;
+}
+
+.item-2 {
+    border-top: hsl(0, 78%, 62%) 5px solid;
+}
+
+.p-items {
+    color: gray;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    transform: scale(0.9);
+}
+
+.heading-items {
+    margin-left: 10px;
+    margin-bottom: 0px;
+    transform: scale(0.85);
+    opacity: 0.7;
+}
+
+.img-items1 {
+    height: 63px;
+    width: 64px;
+    background-image: url("../four-card-feature-section-master/images/icon-supervisor.svg");
+    margin-left: 215px;
+    transform: scale(0.9);
+}
+
+.img-items2 {
+    height: 63px;
+    width: 64px;
+    background-image: url("../four-card-feature-section-master/images/icon-team-builder.svg");
+    margin-left: 215px;
+    transform: scale(0.9);
+}
+
+.img-items3 {
+    height: 63px;
+    width: 64px;
+    background-image: url("../four-card-feature-section-master/images/icon-karma.svg");
+    margin-left: 215px;
+    transform: scale(0.9);
+}
+
+.img-items4 {
+    height: 63px;
+    width: 64px;
+    background-image: url("../four-card-feature-section-master/images/icon-calculator.svg");
+    margin-left: 215px;
+    transform: scale(0.9);
+}
+
+
+@media screen and (max-width:850px){
+        div.body-div {
+            text-align: center;
+        }
+
+        div.flexbox-container {
+            display:block;
+            position: relative;
+            top: -90px;
+            left: 95px;
+        }
+
+        div.item-1{
+            margin-bottom: 130px;
+            position: relative;
+            left: 90px;
+        }
+
+        div.item-2 {
+            position: relative;
+            left: 90px;
+            height: 225px;
+        }
+
+        div.item-3 {
+            position: relative;
+            left: 90px;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        div.item-4 {
+            margin-top: 0px;
+            padding-top: 0px;
+            position: relative;
+            left: 73px;
+            top: 20px;
+            margin-bottom: 50px;
+        }
+}

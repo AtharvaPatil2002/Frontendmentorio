@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Base Apparel coming soon page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="main-div">
+    <div class="text-div" alt=" ">
+      <div class="top-div"></div>
+      <div class="hero-content">
+        <h1 class="hero-h1 h1">W E ' R E</h1>
+        <h1 class="hero-h1 h2">C O M I N G</h1>
+        <h1 class="hero-h1 h2">S O O N</h1>
+        <h3 class="h3">
+          Hello fellow shoppers! We're currently building our new
+        </h3>
+        <h3 class="h3">
+          fashion store. Add your email below to stay up-to-date with
+        </h3>
+        <h3 class="h3">announcements and our launch deals.</h3>
+        <div class="mail">
+          <form id="form" action="#">
+            <div class="inputBox">
+              <input
+                type="text"
+                name=""
+                id="email"
+                placeholder="Enter email address"
+                class="input-bar"
+              ><img src="./base-apparel-coming-soon-master/base-apparel-coming-soon-master/images/icon-error.svg" id="error"/></input>
+              <input
+                type="submit"
+                onclick="validation()"
+                class="input-btn"
+                id="foo"
+                value=">"
+              />
+              <span id="text" class="span-msg"></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="right-img">
+      <img
+        alt=" "
+        src="./base-apparel-coming-soon-master/base-apparel-coming-soon-master/images/hero-desktop.jpg"
+      />
+    </div>
+    <script type="text/javascript">
+      function validation() {
+        var form = document.getElementById('form');
+        var email = document.getElementById('email').value;
+        var text = document.getElementById('text');
+        var submit = document.getElementById('foo');
+        var warn = document.getElementById('error');
+        var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+        if (email.match(pattern)) {
+          form.classList.add('Valid');
+          form.classList.remove('Invalid');
+          text.innerHTML = '';
+          submit.style.cssText =
+            'background-image: linear-gradient( hsl(0deg 56% 92%),  hsl(0, 56%, 92%)); border: 0px;   box-shadow:  1px 1px 5px rgba(190, 97, 97, 0.8), -1px -1px 5px rgba(255, 176, 176, 0.8);  ';
+            warn.style.display = 'none';
+            submit.style.cssText = 'position:relative; left:-100px;'
+          } 
+        else {
+          form.classList.remove('Valid');
+          form.classList.add('Invalid');
+          text.innerHTML = 'Please provide a valid email';
+          text.style.color = '#ff0000';
+          submit.style.cssText =
+            'background-image: linear-gradient( hsl(0deg 56% 92%),  hsl(0, 56%, 92%)); border: 0px;   box-shadow:  1px 1px 5px rgba(190, 97, 97, 0.8), -1px -1px 5px rgba(255, 176, 176, 0.8);  ';
+          warn.style.display = 'inline';
+          }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+
+.grid-item-1 {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: white;
+    grid-column: 1 / -1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    grid-template-rows: 200px 200px;
+    box-shadow: 3px 3px 15px rgba(202, 197, 197, 0.8), 
+    -3px -3px 15px rgba(202, 197, 197, 0.8);
+  }
+
+  .heading-item1 {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 5px;
+    margin-left: 35px;
+    margin-top: 40px;
+  }
+  
+  .heading-item2 {
+    color: hsl(71, 73%, 54%);
+    margin-left: 35px;
+    margin-top: 25px;
+  }
+  
+  .heading-item3 {
+    margin-left: 35px;
+    margin-right: 50px;
+    opacity: 0.4;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  
+  .heading-item3-p2 {
+    margin-left: 35px;
+    margin-right: 50px;
+    opacity: 0.4;
+    margin-top: 7px;
+  }
